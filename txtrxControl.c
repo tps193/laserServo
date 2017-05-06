@@ -115,8 +115,8 @@ __interrupt void USCI0RX_ISR(void)
 	   if (yValue < 700 || yValue > 2300) {
 			yValue = 1500;
 	   }
-	   TA0CCR1 = xValue;
-	   TA1CCR1 = yValue;
+//	   TA0CCR1 = xValue;
+//	   TA1CCR1 = yValue;
 	   volatile unsigned long j;
 	       j = 25000;
 	       do (j--);
